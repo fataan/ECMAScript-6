@@ -1,0 +1,44 @@
+Module.
+untuk menghubungkan antar berkas javascript untuk saling terhubung.
+
+dapat mengexport dan import sebuah nilai seperti variable, function, class dan apapun itu.
+
+Node.js module
+1. export
+	single
+	module.export =	object;
+
+	multiple
+	module.export = {object1, object2};
+
+2. import
+	single
+	const object = require('./file'); // jika dalam 1 folder diawali dengan(./)
+
+	multiple
+	const {object1, object2} = require('./file'); // destructuring object
+
+
+ES 6 module
+1. export
+	single
+	export default object;
+
+	multiple
+	export {object1, object2};
+
+2. import
+	single
+	import object1 from "./file";
+
+	multiple
+	import {object1, object2} from "./file";
+
+
+NOTE:
+- object export default dapat diganti nama object karena dipastikan hanya ada 1 object.
+- keyword "import" menggantikan cont, let dan variable dalam mendeklarsikan variable yang diimport.
+- "import" juga menggunakan destructuring object.
+- mengubah nama import di multiple import dengan menggunakan keyword "as"
+- dalam ES 6 module di file html tag <script></script> harus diberi attribute type = "module"
+

@@ -1,0 +1,63 @@
+/*
+	pengertian javascript
+	"Is a single-threaded, non-bloking, asynchronous and concurrent language."
+
+
+	thread = jalur eksekusi kode
+
+	single-threaded (1 thread)
+	thread 1 : task 1 > task > 2 > task 3 ....
+
+	multi-threaded(lebih dari 1)
+	thread 1 : task 1
+	therad 2 :			task 2
+	thread 3 : 					task 3
+
+
+	bloking = menunggu suatu task hingga selesai.
+
+	bloking
+	task 1(kompleks) x task 2 > task 3
+	tidak bisa melanjutkan ke task 2 sebelum selesai task 1.
+
+	non-bloking
+	task 1(kompleks) > task 2 > task 3
+	bisa melanjutkan ke task 2 sebelum selesai task 1.
+
+
+	synchronous
+	task 1 > task 2 > task 3
+	mengeksekusi kode sesuai urutan penulisan.
+
+	asynchronous 
+	task 1 > task 2 > task 3 > task 1 > task 2
+	dapat mengeksekusi code tidak sesuai urutan penulisan.
+
+
+	asynchronous + single-threaded = concurrency
+	asynchronous + multi-threaded  = parallelism (mengerjakan bersamaan dalma 1 waktu)
+
+
+	summary
+	1. single vs multi-threaded.
+		lingkungan eksekusi "task".
+
+	2. blocking vs non-bloking.
+		teknik "ngoding" (input & ouput related).
+
+	3. synchronous vs asynchronous.
+		teknik "ngoding" (HTTP Request related).
+
+	4. concurrent vs parallelism.
+		lingkungan eksekusi "task".
+
+
+
+
+	Asynchronous Javascript
+	1. callback 
+	2. promise
+	3. ajax
+	4. async & await
+
+*/
